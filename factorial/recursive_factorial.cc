@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int factorial( int x)
+long int factorial( long int x)
 {
   if (x <=0)
   return 1;
@@ -11,12 +11,12 @@ int factorial( int x)
 
 int main()
 {
- int thing = 0;
+ long int factor = 0;
 
  cout << "Possibilities: ";
- cint >> thing;
+ cin >> factor;
 
- cout << "result " << factorial(thing);
+ cout << "result " << factorial(factor) << endl;
 
  return 0;
 }
