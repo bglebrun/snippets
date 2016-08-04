@@ -76,6 +76,7 @@ int main()
 			case '3':
 			cout << "Don't forget your pacifier on the way out";
 			return 0;
+			break;
 			default:
 			cout << "Nice job fuckwit, maybe you should learn how" <<
 			"to count to 3 first";
