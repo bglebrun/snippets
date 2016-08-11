@@ -140,8 +140,8 @@ void mainMenu()
 
 cout << "Rock Paper scissors xtreme"<< endl <<
 	"1) Begin the carnage" << endl <<
-	"2) Gimp the computer (because you probably suck)" << endl <<
-	"3) Cry home to mommy" << endl;
+//	"2) Gimp the computer (because you probably suck)" << endl <<
+	"2) Give up?" << endl;
 	return;
 }
 /*
@@ -161,7 +161,7 @@ int main()
 
 	switch(choice)
 		{
-			case '1':
+			case 1:
 			theCarnage(radicality);
 			break;
 			/*
@@ -170,7 +170,7 @@ int main()
 			radicality = changeDifficulty(radicality);
 			break;
 			*/
-			case '2':
+			case 2:
 			cout << "Don't forget your pacifier on the way out";
 			return 0;
 			break;
