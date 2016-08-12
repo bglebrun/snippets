@@ -33,7 +33,7 @@ struct character
 {
 	string name;
 	int age;
-	gender characterGender;
+	string characterGender;
 	string job;
 	int morality;
 	int brutishness;
@@ -51,9 +51,16 @@ struct character
  */
 bool populateList( vector<character> &list)
 {
-	//Create temp container for our character
+	//Create temp containers for our character
 	character temp;
-	
+	string age;
+	string morality;
+	string brutishness;
+	string mercantile;
+	string crafting;
+	string cleverness;
+	string lawfulness;
+
 	//Then open our file
 	ifstream fin(INPUT_FILE_NAME.c_str());
 
@@ -74,22 +81,22 @@ bool populateList( vector<character> &list)
 	
 	//*.csv file wizzardry
 	//Gonna just comment this section out for debugging
-	/*
-	while(getline(fin,temp.name, ','))
+	
+	while(getline(fin, temp.name, ','))
 	{
-	getline(fin, temp.age, ',');
+	getline(fin, age, ',');
 	getline(fin, temp.characterGender, ',');
 	getline(fin, temp.job, ',');
-	getline(fin, temp.morality, ',');
-	getline(fin, temp.brutishness, ',');
-	getline(fin, temp.mercantileAbility, ',');
-	getline(fin, temp.craftingAbility, ',');
-	getline(fin, temp.cleverness, ',');
-	getline(fin, temp.lawfulness, ',');
+	getline(fin, morality, ',');
+	getline(fin, brutishness, ',');
+	getline(fin, mercantile, ',');
+	getline(fin, crafting, ',');
+	getline(fin, cleverness, ',');
+	getline(fin, lawfulness, ',');
 	
 	list.push_back(temp);
 	}
-	*/
+	//*/
 	
 return true;
 }
