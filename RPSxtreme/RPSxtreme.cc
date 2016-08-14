@@ -80,7 +80,6 @@ bool populateList( vector<character> &list)
 	cout << "Hol up, gettin the squad tight..." << endl;
 	
 	//*.csv file wizzardry
-	//Gonna just comment this section out for debugging
 	
 	while(getline(fin, temp.name, ','))
 	{
@@ -93,7 +92,15 @@ bool populateList( vector<character> &list)
 	getline(fin, crafting, ',');
 	getline(fin, cleverness, ',');
 	getline(fin, lawfulness, ',');
-	
+
+	temp.age = stoi(age);
+	temp.morality = stoi(morality);
+	temp.brutishness = stoi(brutishness);
+	temp.mercantileAbility = stoi(mercantile);
+	temp.craftingAbility = stoi(crafting);
+	temp.cleverness = stoi(cleverness);
+	temp.lawfulness = stoi(lawfulness);
+
 	list.push_back(temp);
 	}
 	//*/
@@ -110,8 +117,10 @@ return true;
 void theCarnage(int radicality)
 {
         vector<character> contestants;
-
+	
         populateList(contestants);
+
+	vector<character>::iterator it = contestants.begin();
 
 return;
 }
