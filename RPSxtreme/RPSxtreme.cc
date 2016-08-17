@@ -108,6 +108,17 @@ bool populateList( vector<character> &list)
 return true;
 }
 
+void getVictims(vector<character> &contestants, character & contestantA, character contestantB)
+{
+	vector<character>::iterator it = contestants.begin();
+	int size = contestants.size();
+
+
+
+
+
+	return;
+}
 /*
  *  * Boys and Girls may enter,
  *   * but only Men and Women return
@@ -117,10 +128,19 @@ return true;
 void theCarnage(int radicality)
 {
         vector<character> contestants;
+		character contestantA;
+		character contestantB;
 	
-        populateList(contestants);
+		if (populateList(contestants))
+		{
+			getVictims(contestants, contestantA, contestantB);
+		}
+		else
+		{
+			cout << "Shit fucked up! Gotta bail nigga." << endl;
+			return;
+		}
 
-	vector<character>::iterator it = contestants.begin();
 
 return;
 }
