@@ -5,3 +5,4 @@ Since these are general use and standard programmers toolbox
 is no warranty, implied or otherwise.
 
 
+# snippets
