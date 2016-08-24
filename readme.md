@@ -1,3 +1,4 @@
+# snippets
 This is just a repo of some general snippets.
 
 Since these are general use and standard programmers toolbox
@@ -5,4 +6,3 @@ Since these are general use and standard programmers toolbox
 is no warranty, implied or otherwise.
 
 
-# snippets
