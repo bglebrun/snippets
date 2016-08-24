@@ -29,10 +29,10 @@ return true;
 int main( int argc, char * argv[])
 {
 
-if (argc < 2)
+if (argc != 2)
 	printUsage();
 
-for (int i = 0; i < argc; i++)
+for (int i = 0; i < atoi(argv[1]); i++)
 	if (isPrime(i))
 		cout << i << " is prime"<< endl;
 
