@@ -1,14 +1,9 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
-void printUsage()
-{
-cout << "PRIME CALCULATIONS\n" << endl <<
- "RUN LARGE NUMBERS AT YOUR OWN RISK!\nUsage" << endl
- << "primes [number] \n Where [number] is an integer\n" <<
-"Program to calculate all prime numbers from zero up to specified [number] " << endl;
-}
+const string usage =  "PRIME CALCULATIONS\nRUN LARGE NUMBERS AT YOUR OWN RISK!\nUsage\nprimes [number] \n Where [number] is an integer\nProgram to calculate all prime numbers from zero up to specified [number]\n";
 
 bool isPrime(int number)
 {
@@ -30,7 +25,7 @@ int main( int argc, char * argv[])
 {
 
 if (argc != 2)
-	printUsage();
+	cout << usage;
 
 for (int i = 0; i < atoi(argv[1]); i++)
 	if (isPrime(i))
