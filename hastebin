@@ -1,0 +1,22 @@
+#!/bin/bash
+
+server='hastebin.com';
+
+usage="$0 pastes into $server
+  usage: $0 something
+  example: '$0 pie' or 'ps aufx |$0'"
+
+if [ -z $1 ]; then 
+  str=`cat /dev/stdin`;
+else 
+  str=$1;
+fi
+
+if [ -z "$str" ]; then
+  echo $usage;
+  exit 1;
+fi
+
+output=`curl -s -X POST -d "$str" $server/documents |perl -pi -e 's|.+:\"(.+)\"}|$1|'`
+
+echo "http://$server/$output"
